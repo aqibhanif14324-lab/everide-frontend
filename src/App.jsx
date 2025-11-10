@@ -10,12 +10,14 @@ import Ambassadors from "./components/Ambassadors/Ambassadors";
 import Login from "./Authenticaiton/Login/Login";
 import SellProducts from "./components/UserAccount/SellProducts/SellProduct";
 import SearchProducts from "./components/SearchProducts/SearchProducts";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 function App() {
 
 
   return (
-    <>
+    <Provider store={store}>
      <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -34,7 +36,7 @@ function App() {
                                             
     </Router>
 
-    </>
+   </Provider>
   )
 }
 

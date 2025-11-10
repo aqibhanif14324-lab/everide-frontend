@@ -7,11 +7,13 @@
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "codegen": "rtk-query-codegen --config rtk-query.config.ts"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.2",
     "@radix-ui/react-dialog": "^1.1.14",
+    "@reduxjs/toolkit": "^2.10.1",
     "gsap": "^3.13.0",
     "lightgallery": "^2.8.3",
     "react": "^19.0.0",
@@ -19,11 +21,13 @@
     "react-icons": "^5.5.0",
     "react-image-gallery": "^1.4.0",
     "react-model": "^4.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.0",
     "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@rtk-query/codegen-openapi": "^2.1.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
