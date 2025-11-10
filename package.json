@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "codegen": "rtk-query-codegen --config rtk-query.config.ts"
+    "codegen": "node ./node_modules/@rtk-query/codegen-openapi/bin/cli.js --config rtk-query.config.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.2",
