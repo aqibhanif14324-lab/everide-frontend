@@ -3,22 +3,54 @@ import { baseApi } from '../baseApi';
 export const authApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
     login: build.mutation({
-      query: (body) => ({ url: '/api/login', method: 'POST', body }),
+      query: (body) => ({
+        url: '/api/auth/login',
+        method: 'POST',
+        body,
+        credentials: 'include',
+      }),
     }),
     register: build.mutation({
-      query: (body) => ({ url: '/api/register', method: 'POST', body }),
+      query: (body) => ({
+        url: '/api/auth/register',
+        method: 'POST',
+        body,
+        credentials: 'include',
+      }),
     }),
     me: build.query({
-      query: () => '/api/user',
+      query: () => ({
+        url: '/api/me',
+        credentials: 'include',
+      }),
     }),
     logout: build.mutation({
-      query: () => ({ url: '/api/logout', method: 'POST' }),
-      async onQueryStarted(_, { queryFulfilled }) {
+      query: () => ({
+        url: '/api/auth/logout',
+        method: 'POST',
+        credentials: 'include',
+      }),
+      async onQueryStarted(_, { dispatch, queryFulfilled }) {
         try {
           await queryFulfilled;
-          localStorage.removeItem('token');
+          // Clear auth state
+          dispatch(authApi.util.resetApiState());
         } catch {}
       },
+    }),
+    forgotPassword: build.mutation({
+      query: (body) => ({
+        url: '/api/auth/forgot-password',
+        method: 'POST',
+        body,
+      }),
+    }),
+    resetPassword: build.mutation({
+      query: (body) => ({
+        url: '/api/auth/reset-password',
+        method: 'POST',
+        body,
+      }),
     }),
   }),
   overrideExisting: false,
@@ -29,4 +61,6 @@ export const {
   useRegisterMutation,
   useMeQuery,
   useLogoutMutation,
+  useForgotPasswordMutation,
+  useResetPasswordMutation,
 } = authApi;

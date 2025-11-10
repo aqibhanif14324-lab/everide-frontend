@@ -10,15 +10,13 @@ import Ambassadors from "./components/Ambassadors/Ambassadors";
 import Login from "./Authenticaiton/Login/Login";
 import SellProducts from "./components/UserAccount/SellProducts/SellProduct";
 import SearchProducts from "./components/SearchProducts/SearchProducts";
-import { Provider } from "react-redux";
-import { store } from "./store";
+// Store provider moved to main.jsx
 
 function App() {
 
 
   return (
-    <Provider store={store}>
-     <Router>
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
        
@@ -33,10 +31,7 @@ function App() {
         <Route path="/search" element={<SearchProducts />} />
 
       </Routes>
-                                            
     </Router>
-
-   </Provider>
   )
 }
 
