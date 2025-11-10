@@ -1,0 +1,43 @@
+
+:root {
+  --primary-color: #43C59E;
+  --primary-light: #5ED6B3;
+  --primary-dark: #35A183;
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --text-light: #999999;
+  --background-color: #F8F8F8;
+  --border-color: #E0E0E0;
+  --white: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-color: rgba(0, 0, 0, 0.6);
+  --success-color: #4CAF50;
+  --error-color: #F44336;
+  --warning-color: #FFC107;
+}
+
+
+
+
+
+
+.sell-instructions {
+  margin-top: 1rem;
+  color: var(--text-medium);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .sell-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

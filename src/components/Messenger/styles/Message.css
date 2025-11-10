@@ -1,0 +1,184 @@
+.message-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: flex-end;
+  animation: fadeIn 0.3s ease;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-wrapper.outgoing {
+  justify-content: flex-end;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  position: relative;
+  word-wrap: break-word;
+  transition: transform 0.2s ease;
+}
+
+.message:hover {
+  transform: translateY(-2px);
+}
+
+.message.outgoing {
+  background-color: #dcf8c6;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message.incoming {
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message-content {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-text {
+  margin-top: 5px;
+}
+
+.message-time {
+  font-size: 11px;
+  color: #888;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* Company message styling */
+.message-wrapper.company-message {
+  margin-bottom: 8px;
+}
+
+.message.company {
+  background-color: #C2EFDB;
+  color: var(--color-black);
+  border-radius: 18px;
+  border-bottom-left-radius: 5px;
+  padding: 12px 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 0.5rem;
+}
+
+.company-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00c781;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-company-container{
+
+}
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-right: 10px;
+}
+
+/* File attachment styling */
+.file-attachment {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.file-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.file-info {
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 500;
+  margin-bottom: 2px;
+  word-break: break-all;
+}
+
+.file-download {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Image styling */
+.message-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .message {
+    max-width: 80%;
+    padding: 8px 12px;
+  }
+
+  .message-content {
+    font-size: 13px;
+  }
+
+  .company-avatar,
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    max-width: 85%;
+    padding: 7px 10px;
+  }
+
+  .message-content {
+    font-size: 12px;
+  }
+
+  .message-time {
+    font-size: 10px;
+  }
+
+  .company-avatar,
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}

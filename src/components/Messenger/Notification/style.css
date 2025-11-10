@@ -1,0 +1,123 @@
+.notifications_users_container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.notifications_users_item_view {
+  transform: translateY(0px);
+}
+
+.notifications_users_content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.notifications_users_inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.notifications_users_main {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  user-select: none;
+}
+
+.notifications_users_message {
+ 
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.notifications_users_message:hover {
+  background-color: #f8f9fa;
+}
+
+.notifications_users_message_inner {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-inline: 1rem;
+}
+
+.notifications_users_avatar {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.notifications_users_avatar_picture {
+     display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 9999px;
+    overflow: hidden;
+    position: relative;
+}
+
+.notifications_users_avatar_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  color: transparent;
+}
+
+.notifications_users_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.notifications_users_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.notifications_users_title span {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.notifications_users_description {
+  font-size: 0.75rem;
+  color: #6c757d;
+  width: 100%;
+  text-align: left;
+}
+
+.notifications_users_description p {
+  margin: 0;
+}
+
+.notifications_users_action {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.notifications_users_delete_button {
+  background-color: #ef4444;
+  height: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: white;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.notifications_users_delete_button:hover {
+  background-color: #dc2626;
+}

@@ -1,0 +1,34 @@
+@import "./index.css";
+.wardrobe-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.changing-room,
+.about-content,
+.reviews-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  
+}
+
+.about-content,
+.reviews-content {
+  color: var(--color-grey-600);
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  width: 100%;
+ 
+}
+
+.about-content h3,
+.reviews-content h3 {
+  margin-bottom: var(--space-4);
+  color: var(--color-grey-800);
+}

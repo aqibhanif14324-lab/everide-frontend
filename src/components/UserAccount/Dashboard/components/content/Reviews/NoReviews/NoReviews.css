@@ -1,0 +1,75 @@
+.no-reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+
+  }
+  
+  .no-reviews-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  
+  .no-reviews-star-icon {
+    height: 4rem;
+    width: 4rem;
+    color: var(--clr-black);
+  }
+  
+  .no-reviews-title {
+    font-weight: bold;
+    font-size: 1.375rem;
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    white-space: pre-wrap;
+    text-transform: capitalize;
+    color: var(--clr-black);
+    font-family: "Montserrat", sans-serif;
+    width: 25ch;
+  }
+
+  .no-reviews-subtitle {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    white-space: pre-wrap;
+  }
+
+
+  /* pagination */
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--color-light-black);
+  }
+  
+  .pagination-prev {
+    padding-right: 1.5rem;
+    width: 6rem;
+  }
+  
+  .pagination-next {
+    padding-left: 1.5rem;
+    width: 6rem;
+  }
+  
+  .pagination-text {
+    /* Additional text styling if needed */
+  }

@@ -1,0 +1,42 @@
+.favorite-empty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+  }
+
+  .favorite-empty-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+
+  .favorite-empty-icon {
+    height: 3.3rem;
+    width: 3.2rem;
+    color: currentColor;
+    color: var(--color-light-black);
+  }
+
+  .favorite-empty-title {
+    font-weight: bold;
+    font-size: 1.375rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    color: var(--color-light-black);
+  }
+
+  .favorite-empty-description {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    white-space: pre-wrap;
+    color: var(--color-light-black);
+  }

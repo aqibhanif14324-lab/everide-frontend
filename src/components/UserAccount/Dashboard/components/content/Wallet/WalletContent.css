@@ -1,0 +1,230 @@
+/* Wallet specific styles */
+/* Wallet Container */
+.wallet-container {
+    position: fixed;
+    z-index: 55;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: scroll;
+  }
+  
+  @media (min-width: 1024px) {
+    .wallet-container {
+      margin-top: 0;
+      position: relative;
+      z-index: auto;
+      padding: 2rem;
+    }
+  }
+  
+  /* Wallet Header */
+  .wallet-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    left: 0;
+    z-index: 50;
+    transition: all 0.3s;
+    background-color: white;
+    border-bottom: 1px solid #b8b8b8;
+    position: fixed;
+    top: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .wallet-header {
+      position: absolute;
+      z-index: 10;
+    }
+   
+  }
+
+  @media (max-width: 768px) {
+    .wallet-payment-options{
+      margin-top: 1rem !important;
+      margin-inline: 0rem !important;
+    }
+    .wallet-balance-card {
+     
+      margin: 0 !important;
+     
+    }
+    
+  
+  }
+  
+  .wallet-header-left,
+  .wallet-header-right {
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wallet-header-center {
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    width: 70%;
+    font-size: 0.875rem;
+  }
+  
+  .wallet-header-title {
+    position: relative;
+    display: block;
+    z-index: 20;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+  
+  /* Wallet Content */
+  .wallet-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+    padding-top: var(--nav-height);
+  }
+  
+  @media (min-width: 1024px) {
+    .wallet-content {
+      padding-bottom: 0;
+    }
+  }
+  
+  /* Balance Card */
+  .wallet-balance-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFF2F2;
+    padding: 2rem;
+    margin: 2.5rem 2rem 0 2rem;
+    border: 1px solid var(--clr-border);
+    border-radius: 0.5rem;
+  }
+  
+  .wallet-balance-label {
+    font-family: var(--fs-600);
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .wallet-info-icon {
+    color: var(--clr-button);
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  
+  .wallet-balance-amount {
+    font-weight: bold;
+    font-size:3.125rem;
+    margin: 0.7rem 0;
+    color: var(--clr-black);
+  }
+  
+  .wallet-add-account-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 0.6rem 0;
+    margin-top: 1rem;
+    background-color: var(--clr-button);
+    color: white;
+    border: none;
+  }
+  
+  /* Payment Options */
+  .wallet-payment-options {
+    background-color: #EFF2F2;
+    padding: 1rem 2rem;
+    margin-top: 2.5rem;
+    margin-inline: 1rem;
+  }
+  
+  .wallet-payment-title {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+    display: block;
+    color: var(--color-light-black);
+  }
+  
+  .wallet-option-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--clr-border);
+    
+  }
+  
+  .wallet-option-item:last-child {
+    border-bottom: none;
+  }
+  
+  .wallet-option-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .wallet-option-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wallet-option-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: pre-line;
+    color: var(--color-light-black);
+  }
+  
+  .wallet-option-description {
+    color: #737373;
+    white-space: pre-wrap;
+    font-size: 0.8125rem;
+  }
+  
+  /* Help Link */
+  .wallet-help-link {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    display: block;
+    margin: auto;
+    width: auto;
+    background: none;
+    border: none;
+  }

@@ -1,0 +1,119 @@
+.settings-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: env(safe-area-inset-bottom, 0); /* xs:pb-footer-safe */
+  }
+  
+  .section-header {
+    background-color: var(--background-light);
+    padding: 0.75rem 1.5rem; /* p-sm-full */
+    font-size: 0.75rem; /* text-12 */
+    font-family: "Montserrat", sans-serif;
+   background-color: #FBFBFB;
+   margin-bottom: 0rem;
+  }
+  
+  .settings-button {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem 2rem; /* px-8 py-4 */
+    width: 100%;
+    background: none;
+    border: none;
+  }
+  
+  .settings-button:hover {
+    color: var(--primary-color);
+  }
+  
+  .settings-button.text-danger:hover {
+    color: var(--danger-color);
+  }
+  
+  .settings-icon {
+    width: 1.5rem; /* w-10 */
+    height: 1.5rem;
+    color: black;
+  }
+  
+  .settings-icon.delete-icon{
+    color: var(--clr-danger);
+  }
+  .text-danger .settings-icon {
+    color: var(--clr-danger);
+  }
+  
+  .button-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 1.5rem; /* mx-6 */
+  }
+  
+  .button-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem; /* text-16 */
+    white-space: pre-line;
+  }
+  .button-title:hover{
+    color: var(--clr-button);
+  }
+  .button-title.delete-account {
+   
+    color: var(--clr-danger);
+  }
+  
+  .flex-spacer {
+    flex: 1;
+  }
+  
+  .arrow-icon {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+    margin: 0 1.5rem; /* mx-6 */
+    flex-shrink: 0;
+  }
+
+  .danger-icon-arrow{
+    color: var(--clr-danger);
+  }
+
+  @media (max-width: 768px) {
+    .settings-button {
+      padding: 0.75rem 1rem; /* px-4 py-2 */
+    }
+  
+    .settings-icon {
+      width: 1.25rem; /* w-6 */
+      height: 1.25rem; /* h-6 */
+    }
+  
+    .button-title {
+      font-size: 0.875rem; /* text-14 */
+    }
+  
+    .arrow-icon {
+      width: 1.25rem; /* w-6 */
+      height: 1.25rem; /* h-6 */
+    }
+    .settings-button.text-danger:hover {
+      color: var(--clr-danger);
+    }
+    .button-title.delete-account {
+      color: var(--clr-danger);
+    }
+    .settings-icon.delete-icon{
+      color: var(--clr-danger);
+    }
+    .danger-icon-arrow{
+      color: var(--clr-danger);
+    }
+    
+    
+  }

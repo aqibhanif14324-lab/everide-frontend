@@ -1,0 +1,134 @@
+.ils-parlent-section {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+ 
+    color: #374151; /* text-secondary */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .title-review {
+    font-size: 14px;
+  
+    font-weight: 600;
+    color: rgb(51, 83, 96)
+    ;
+  }
+  
+  .subtitle-review-container {
+    font-size: 14px;
+  }
+  
+  .content-review {
+    width: 100%;
+  }
+  .card_paragraph{
+    font-size: 14px;
+    color: rgb(51, 83, 96);
+    font-weight: 500;
+    
+  }
+  
+  .slider-container {
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+  }
+  
+  .nav-button {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-circle {
+    margin-left: 2rem;
+  }
+  
+  .swiper-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .swiper-container_reviews .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  .ils-parlent-section_container{
+    background-color: #E7F8F0;
+  }
+  .swiper-container_reviews .swiper-wrapper .swiper-slide {
+    
+    height: auto;
+    width: 400px !important;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .card {
+    display: flex;
+    gap: 1.25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #374151;
+    font-size: 14px;
+    width: 100%;
+    min-height: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .avatar {
+    width: 100px;
+    flex-shrink: 0;
+  }
+  
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0;
+    border-radius: 36% 0 36% 36%;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .name {
+    color: #6b7280; /* text-surface-medium */
+  }
+  
+  .title-review-main {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.3rem;
+    color: var(--clr-button);
+   width: 22.563rem;
+   
+  }
+  
+
+  @media (max-width: 52.625em) {
+    .ils-parlent-section {
+       display: none;
+    }
+    
+}

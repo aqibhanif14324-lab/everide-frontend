@@ -1,0 +1,105 @@
+.invitation-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+  
+  .invitation-header {
+    background-image: url('https://static.everide.app/yJawrQ10NcJbYOB8O5Ca0p80SoprAAhFTX5jb66qMg0/rs:fill:800:175:1/q:75/g:ce/aHR0cHM6Ly9zdGF0aWMuZXZlcmlkZS5hcHAvc2l0ZS9wYWdlcy9pbnZpdGUvaGVhZGVyLnBuZw.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 175px;
+    background-size: cover;
+  }
+  
+  .invitation-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .invitation-main-text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--color-light-black);
+  }
+  
+  .invitation-subtext {
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .invitation-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
+  .invitation-input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .invitation-copy-icon {
+    width: 3rem;
+    cursor: pointer;
+  }
+  
+  .invitation-share-btn {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 0.75rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .invitation-help {
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .invitation-help-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.5rem;
+  }
+  
+  .invitation-help-icon {
+    width: 2rem;
+    color: var(--clr-gray);
+  }
+  
+  @media (min-width: 768px) {
+    .invitation-header {
+      background-image: url('https://static.everide.app/SDDhwGZKYBVkpR026KrNBvxRD5kie1d5JtYiObgzeEk/rs:fill:800:175:1/q:75/g:ce/aHR0cHM6Ly9zdGF0aWMuZXZlcmlkZS5hcHAvc2l0ZS9wYWdlcy9pbnZpdGUvaGVhZGVyLnBuZw.webp');
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .invitation-share-btn {
+      display: block;
+    }
+  }

@@ -1,0 +1,19 @@
+.goback_classname {
+     width: 4.2rem;
+    height: 3.4rem;
+    margin-left: 0.5rem;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    border: 1px solid var(--clr-border);
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    cursor: pointer;
+    padding: 0;
+    background-color: white;
+}
+
+.goback_classname svg {
+  width: 0.9rem; 
+  height: 0.9rem; }

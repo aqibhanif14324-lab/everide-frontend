@@ -1,0 +1,73 @@
+.payment-empty-state {
+    padding: 0 2rem; /* px-8 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .empty-state-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    z-index: 10;
+  }
+  
+  .empty-state-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1.5rem 3rem; py-20 px-12 */
+    text-align: center;
+  }
+  
+  .empty-state-icon svg {
+    height: 3.2rem; /* h-20 */
+    width: 3.2rem; /* w-20 */
+    color: var(--clr-black);
+  }
+  
+  .empty-state-title {
+    font-weight: bold;
+    font-size: 1.375rem; /* text-22 */
+    margin-top: 1rem; /* mt-4 */
+    font-family: var(--font-heading); /* Assuming you have a font-heading variable */
+    white-space: pre-wrap;
+    text-transform: capitalize;
+  }
+  
+  .empty-state-description {
+    font-size: 0.875rem; /* text-14 */
+   
+    font-family: var(--font-heading);
+    white-space: pre-wrap;
+  }
+  
+  .add-card-button {
+    padding: 0.85rem 1.5rem; /* p-sm-full */
+    font-size: 0.875rem; /* text-14 */
+    border-radius: 0.6rem; /* rounded-[1.2rem] */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600; /* font-semibold */
+    line-height: 1; /* leading-none */
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin-top: 2rem; /* mt-8 */
+    min-width: 50%; /* min-w-[50%] */
+ 
+    background-color: var(--clr-button); /* btn-primary */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-card-button:hover {
+    opacity: 0.9;
+  }

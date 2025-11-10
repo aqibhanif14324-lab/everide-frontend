@@ -1,0 +1,62 @@
+.guarantees-section {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    color: #555;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+  
+  .guarantees-title {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(51, 83, 96);
+  }
+  
+  .guarantees-subtitle {
+    font-size: 14px;
+    color: rgb(51, 83, 96);
+  }
+  
+  .guarantees-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .guarantee-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    color: var(--clr-button);
+  }
+  
+  .guarantee-icon {
+    height: 100px;
+    color: var(--clr-button); /* Use your theme's primary color */
+  }
+  
+  .guarantee-label {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 0.5rem;
+    color: rgb(51, 83, 96)
+    ;
+  }
+  
+  @media (max-width: 48.625em) {
+    .guarantees-section {
+       display: none;
+    }
+    
+}

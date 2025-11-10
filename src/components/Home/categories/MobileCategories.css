@@ -1,0 +1,57 @@
+/* Mobile Categories */
+.mobile-category-container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.mobile-category-swiper {
+  overflow-x: auto;
+  white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    -webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+        }
+  padding: 0 10px;
+}
+
+.mobile-category-wrapper {
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.mobile-category-slide {
+  display: inline-block;
+  width: 70px; /* 28 * 4 */
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.mobile-category-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.mobile-category-image {
+  height: 80%;
+  width: 100%;
+  object-fit: contain;
+  border: 0;
+}
+
+.mobile-category-name {
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: 5px;
+  color: #333;
+}

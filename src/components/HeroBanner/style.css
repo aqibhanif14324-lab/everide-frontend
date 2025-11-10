@@ -1,0 +1,229 @@
+.hero_banner{
+    background-image: url("https://static.everide.app/build/1674/img/home-cover-3.011d923.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    min-height: 19.375rem;
+}
+.hero_banner_container{
+    display: flex
+;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .hero_banner_container {
+      justify-content: center;
+    }
+  }
+.custom-badge {
+    background-color: var(--clr-button);
+    color: var(--clr-white);
+    font-family: 'YourHeadingFont', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    transform: rotate(-5deg);
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 0.5rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding-block: 0.2rem;
+  }
+  
+  .store-links {
+    display: grid
+    ;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 3rem;
+        align-items: center;
+  }
+  
+  .store-link {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .store-link.apple {
+    justify-content: flex-end;
+  }
+  
+  .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+   line-height: 1.2;
+    white-space: normal;
+    color: var(--clr-black);
+  }
+  
+  @media (min-width: 768px) {
+    .section-heading {
+      font-size: 34px;
+      margin-top: 2rem; /* equivalent to mt-8 */
+      white-space: pre-wrap;
+    }
+    
+  }
+  @media (max-width:63.813em) {
+    .hero_banner{
+        display: none;
+    }
+  }
+  
+
+  /*  ------------------------------------------------------ */
+
+  /* Wrapper for the swiper slides */
+.swiper-wrapper_container {
+  display: flex;
+  align-items: stretch;
+  transform: translate3d(0px, 0px, 0px);
+  transition-duration: 0ms;
+}
+
+/* Each slide */
+.swiper-slide_item {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide_item {
+    width: 102%;
+    padding-right: 1rem;
+  }
+
+  .swiper-slide_item.next {
+    padding-left: 1rem; /* md:pl-4 */
+  }
+}
+
+/* Anchor block */
+.picture-hover {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem; /* matches rounded-card */
+}
+
+/* Image container */
+.picture-hover picture {
+  position: relative;
+  aspect-ratio: 5 / 3;
+  display: block;
+  width: 100%;
+  min-height: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* approx bg-surface-overlay */
+}
+
+/* Responsive Image */
+.picture-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  color: transparent;
+}
+
+/* Text overlay */
+.picture-hover .overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .picture-hover .overlay {
+    padding: 2.5rem;
+  }
+}
+
+/* Heading */
+.picture-hover h3 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 900;
+  color: white;
+  
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .picture-hover h3 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+  }
+}
+
+/* Subtext span + icon */
+.picture-hover span.flex {
+  display: flex;
+  align-items: center;
+ 
+  color: white;
+  text-decoration: underline;
+  font-size: 0.875rem; /* 14px */
+}
+
+@media (min-width: 768px) {
+  .picture-hover span.flex {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+/* Icon styles */
+.picture-hover svg {
+    width: 2.1rem;
+    height: 2.1rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 9999px;
+  background-color: var(--clr-button); /* Approx Tailwind 'bg-primary' */
+  transform: rotate(180deg);
+  color: white;
+}
+
+@media (min-width: 768px) {
+    .picture-hover svg {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+}
+
+
+.custom-section {
+    padding-left: 1rem; /* pl-4 */
+    margin-bottom: 2rem; /* mb-8 */
+    margin-top: 3rem; /* mt-12 */
+  }
+  
+  /* Simulating sm:content — assuming "content" meant `max-width` + `margin: auto` */
+  @media (min-width: 640px) {
+    .custom-section {
+      max-width: 640px;
+     
+    }
+  }

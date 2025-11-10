@@ -1,0 +1,144 @@
+.single-product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  
+  }
+  @media (max-width: 45.438em) {
+    .single-product-wrapper {
+      grid-template-columns: 1fr;
+    }
+    .thumbs-swiper-product{
+      display: none;
+      
+    }
+    
+  }
+  .gallary-container {
+    grid-column: span 3;
+    margin-block: 1rem;
+    
+  }
+
+.thumbs-swiper-product2  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+  background-color: #EFF2F3;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .thumbs-swiper-product2 .swiper-slide img {
+    display: block;
+    width: 100%;
+   height: 500px;
+    object-fit: contain !important;
+  }
+  
+
+  .thumbs-swiper-product {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+ 
+  .thumbs-swiper-product2 {
+    /* height: 62%; */
+    width: 100%;
+  }
+  
+  .thumbs-swiper-product {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  
+  .thumbs-swiper-product .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .thumbs-swiper-product .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .thumbs-swiper-product .swiper-slide  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    border-radius: 10px;
+  }
+  .swiper-thumbs{
+    height: 110px;
+    width: 100%;
+
+  }
+  .thumbs-swiper-product .swiper-wrapper .swiper-slide{
+    width: 110px !important;
+    cursor: pointer;
+  }
+.product-images-container{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+
+/* breadcrumb */
+
+.breadcrumb-container {
+  display: flex;
+}
+
+.breadcrumb-list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 0rem;
+  font-family: 'Montserrat', sans-serif; 
+  color: #333; 
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-separator {
+  width: 0.5rem;
+  height: 100%;
+  margin: 0 0.75rem;
+  fill: currentColor;
+}
+
+.breadcrumb-link {
+  font-size: 0.75rem;
+  line-height: 1;
+  text-transform: capitalize;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: #0066cc; /* Replace with your primary color */
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link.active {
+  font-weight: bold; /* Or any other style to indicate active state */
+}
+
+/* Hide on small screens */
+@media (max-width: 1023px) {
+  .breadcrumb-container {
+    display: none;
+  }
+}

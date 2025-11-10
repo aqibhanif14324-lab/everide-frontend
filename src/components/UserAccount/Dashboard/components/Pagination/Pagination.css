@@ -1,0 +1,17 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* Replace with actual font-family */
+    font-size: 1rem; /* 16px equivalent */
+    font-weight: 500; /* medium */
+    text-align: center;
+    padding-top: 4rem; /* 6 * 0.25rem */
+    padding-bottom: 1.5rem;
+    color: var(--color-light-black);
+    
+  }
+
+  .pagination-text {
+    /* Additional text styling if needed */
+  }

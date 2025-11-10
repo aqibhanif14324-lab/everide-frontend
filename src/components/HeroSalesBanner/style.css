@@ -1,0 +1,54 @@
+.sales-section {
+    display: flex;
+    margin-bottom: 1.5rem; /* mb-6 */
+    padding-left: 0.5rem;  /* pl-2 */
+    padding-right: 1.5rem; /* pr-6 */
+  }
+  
+  .sales-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .sales-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sales-title {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    font-size: 22px;
+    line-height: normal;
+    white-space: pre-line;
+    color: var(--clr-black);
+  }
+  
+  .sales-description {
+    color: var(--clr-gray); 
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  
+  .sales_banner_swiper .swiper-wrapper .swiper-slide{
+width: 100%;
+    height: auto;
+    padding: 0.2rem;
+    display: flex;
+    align-items: stretch;
+  }
+  .sales_banner_swiper .swiper-wrapper .swiper-slide .swiper-slide_item {
+    width: 100%;
+  }
+  
+  .sales_banner_swiper .swiper-wrapper .swiper-slide .swiper-slide_item img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .sales_banner_swiper .swiper-wrapper .swiper-slide .swiper-slide_item:hover img {
+    transform: scale(1.05);
+  }

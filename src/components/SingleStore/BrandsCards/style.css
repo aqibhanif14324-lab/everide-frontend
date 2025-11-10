@@ -1,0 +1,172 @@
+/* Main container */
+.partner_brand_card_container {
+  position: relative;
+  width: 100%;
+  height: 7rem; /* 28 * 0.25rem = 7rem */
+  background-color: white;
+}
+
+/* Content wrapper */
+.partner_brand_card_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex: 1;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.25rem;
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .single_store_h_72{
+        height: 8rem;
+    }
+    .partner_brand_card_info_container{
+        margin-left: 0.7rem !important;
+    }
+    .partner_brand_card_badge{
+        padding-left: 0.7rem !important;
+        padding-right: 0.7rem !important;
+    }
+  .partner_brand_card_content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 2rem;
+  }
+    
+}
+/* Avatar container */
+.partner_brand_card_avatar_container {
+  /* width: 8.5rem; 34 * 0.25rem = 8.5rem */
+  height: 8.5rem;
+}
+
+.partner_brand_card_avatar_wrapper {
+  display: flex;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 1px solid #b8b8b8;
+  width: 5rem;
+  height: 5rem;
+}
+
+.partner_brand_card_picture {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  aspect-ratio: 1/1;
+  background-color: var(--surface-overlay);
+  position: relative;
+}
+
+.partner_brand_card_img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  color: transparent;
+  border: 0;
+}
+
+/* Info container */
+.partner_brand_card_info_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+ 
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Header section */
+.partner_brand_card_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.partner_brand_card_title_container {
+  overflow-x: hidden;
+  width: 80%;
+}
+
+.partner_brand_card_title {
+  font-weight: bold;
+    color: var(--color-black);
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/* Favorite button */
+.partner_brand_card_favorite_btn {
+  transition: color 0.3s ease;
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+.partner_brand_card_favorite_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Details section */
+.partner_brand_card_details {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6875rem;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.partner_brand_card_badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-button);
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.partner_brand_card_star_icon {
+  margin-left: 1rem;
+  color: var(--clr-button);
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.partner_brand_card_rating {
+  margin-top: 0.25rem;
+  color: rgb(113, 113, 113);
+}
+
+.partner_brand_card_divider {
+  margin-left: 0.5rem;
+  color: var(--surface-medium);
+}
+
+.partner_brand_card_articles {
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+color: rgb(113, 113, 113);
+}

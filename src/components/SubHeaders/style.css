@@ -1,0 +1,233 @@
+.top_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-accent);
+}
+.top_header_item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-white);
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 2.188rem;
+}
+.bottom-navbar{
+    display: none;
+}
+
+/* @media (max-width: var(--breakpoint-lg)){
+    .top_header_item{
+        font-size: 10px;
+        line-height: 1.5;
+        gap: 0.4;
+       
+      
+        
+    }
+    .top_header_item svg {
+        display: none;
+        
+        
+    }
+    
+    .top_header{
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+       
+    }
+} */
+
+
+
+
+
+/* bottom header */
+
+.bottom_header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--clr-black);
+    cursor: pointer;
+    transition: all 0.7s ease;
+    
+}
+.bottom_header_item:hover{
+    
+    color: var(--clr-button);
+
+}
+.bottom_container_main{
+    background-color: var(--clr-bottom-navbar);
+    padding: 0.8rem;
+}
+
+/* main header */
+.main_header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding-block: var(--size-400);
+    
+    background-color: var(--clr-white);
+    
+}
+.main_header_items_last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-black);
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 2rem;
+}
+.main_header_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--clr-black);
+   
+    font-size: 13px;
+    font-weight: 400;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   
+}
+.main_header_items:hover{
+    color: var(--clr-button);
+   
+}
+.search-input{
+   
+    padding: 0.7rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    height: 55px;
+    width: 80%;
+    
+    border-color: rgba(232, 232, 232, 1);
+    padding-left: 3.4rem;
+}
+
+.main_header_items_first{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+    color: var(--clr-black);
+    
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4rem;
+    width: 100%;
+}
+.search_container{
+    width: 100%;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+
+    color: var(--clr-black);
+}
+.search-label {
+    position: absolute;
+    top: 50%;
+    left: 3.4rem;
+    transform: translateY(-20%);
+    color: var(--clr-black);
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  .search-label-1{
+    position: absolute;
+    top: 25%;
+    left: 3.4rem;
+    transform: translateY(-50%);
+    color: var(--clr-black);
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    font-weight: 600;
+  }
+
+  
+    @media (max-width:63.813em){
+    .main_header{
+        display: flex;
+        
+    }
+    .main_header_logo{
+        display: none ;
+    }
+    .main_header_items_last{
+        display: none ;
+    }
+    .search-input{
+        width: 100%;
+    }
+    .middleheader_main_main{
+        display: none;
+    }
+    .bottom_container_main {
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+    .bottom-navbar{
+        display: block;
+    }
+    .multi_section{
+        display: none;
+    }
+    .main_header_items_first{
+        gap: 0;
+    }
+    .top_header_item span svg{
+        width: 20px;
+        height: 20px;
+    }
+  }
+
+  @media (max-width: 39.5em) {
+   
+    .search-input{
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .search-icon{
+        left: 1rem;
+    }
+    .search-label {
+        left: 2.4rem;
+    }
+    .search-label-1 {
+        left: 2.4rem;
+    }
+       .top_header_item span svg{
+      display: none;
+    }
+  }

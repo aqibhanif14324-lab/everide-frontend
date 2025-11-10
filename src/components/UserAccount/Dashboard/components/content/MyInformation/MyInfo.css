@@ -1,0 +1,103 @@
+.my-info-main-container{
+    padding: 1rem;
+}
+
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+
+   
+  }
+  
+  .contact-details-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2.5;
+  }
+  
+  .contact-label {
+    white-space: pre-line;
+    color: var(--clr-black);
+    font-family: "Monero", sans-serif;
+  }
+  
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    height: 2rem;
+    padding: 0.3rem 1.25rem;
+    font-size: 11px;
+    border-radius: 0.25rem;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+
+  .security-message {
+    font-size: 13px;
+    color: var(--surface-medium); /* or use a specific color like #6b7280 */
+  }
+
+ 
+
+  @media (max-width: 768px) {
+    .my-info-main-container {
+        padding: 0.5rem;
+    }
+    .contact-details-container {
+        margin-block: 0.5rem;
+    }
+    .contact-title {
+        font-size: 12px;
+    }
+    .contact-label {
+        font-size: 12px;
+    }
+    .badge {
+        font-size: 10px;
+        padding: 0.2rem 1rem;
+    }
+    .security-message {
+        font-size: 11px;
+    }
+    .my-info-inputs {
+        gap: 0.5rem;
+    }
+    .my-info-inputs-two {
+        gap: 0.5rem;
+    }
+    .cols-2 {
+        grid-column: span 1;
+    }
+    .email-input-class {
+        padding-left: 2rem !important;
+    }
+    .input-actions {
+        gap: 5px;
+    }
+    .input-actions svg {
+        margin-left: 0.5rem;
+    }
+    .my-info-image {
+        width: 3rem;
+        height: 3rem;
+    }
+    .my-info-slide {
+        min-width: 4rem;
+    }
+    .my-info-label {
+        font-size: 12px;
+    }
+    
+    
+  }

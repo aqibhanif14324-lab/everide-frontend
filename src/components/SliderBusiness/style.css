@@ -1,0 +1,235 @@
+.partner-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; /* mb-6 */
+    padding-left: 0.5rem;  /* pl-2 */
+    padding-right: 1.5rem; /* pr-6 */
+  }
+  
+  .partner-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .partner-title {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    font-size: 22px; /* text-22 */
+    line-height: normal;
+    white-space: pre-line;
+    color: var(--clr-black); 
+  }
+
+  
+  .partner-description {
+    color: var(--clr-gray); /* Approximation for 'text-surface-medium' */
+    white-space: pre-wrap;
+    font-size: 13px;
+  }
+  
+  .swiper-slide-wrapper {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  .swiper-card {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+ 
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 11rem;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+    
+  }
+  
+  @media (min-width: 640px) {
+    .image-container {
+      height: 14rem;
+    }
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 76%;
+    object-fit: cover;
+
+
+
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  
+  .badge-hero-container {
+    background-color: #0ea5e9 ;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.71rem;
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .icon-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .brand-logo {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .brand-details{
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 5rem;
+    border: 1px solid var(--clr-white);
+   background-color: var(--clr-white);
+    overflow: hidden;
+  }
+  .slider_busniess_container .swiper-wrapper .swiper-slide{
+    width: 1000px;
+  }
+  .card-container-hero-page {
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.25rem; /* py-2 px-5 */
+  }
+  
+  .card-content-home {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .shop-title {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--clr-black); 
+  }
+  
+  @media (min-width: 640px) {
+    .shop-title {
+      font-size: 16px;
+    }
+  }
+  
+  .shop-subtitle {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--clr-gray); /* Tailwind's text-surface-medium, approximated */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media (min-width: 640px) {
+    .shop-subtitle {
+      font-size: 14px;
+    }
+  }
+  
+  .rating-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 11px;
+  }
+  
+  @media (min-width: 640px) {
+    .rating-section {
+      font-size: 12px;
+    }
+  }
+  
+  .rating-star {
+    color: var(--clr-button); /* Tailwind's text-primary / blue-500 approximation */
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .rating-value {
+    margin-top: 0.25rem;
+    color: var(--clr-gray); /* text-surface-medium */
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; /* mb-6 */
+    padding-left: 0.5rem;   /* pl-2 */
+    padding-right: 1.5rem;  /* pr-6 */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-family: sans-serif; /* Adjust to match the real heading font */
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.5;
+    white-space: pre-line;
+    color: var(--clr-black); 
+  }
+  
+  .description {
+    color: var(--clr-gray); 
+    font-size: 13px;
+    white-space: pre-wrap;
+  }
+  
+  .slider-business{
+    margin-block: 2rem;
+  }

@@ -1,0 +1,35 @@
+.app-download {
+  display: flex;
+  justify-content: center;
+  gap: var(--footer-spacing-lg);
+  margin-top: var(--footer-spacing-md);
+      align-items: center;
+}
+
+.app-button {
+  display: inline-block;
+  transition: var(--footer-transition);
+  max-width: 180px;
+}
+
+.app-button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.app-button-image {
+  /* width: 100%;
+  height: auto; */
+}
+
+@media (max-width: 768px) {
+  .app-download {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--footer-spacing-md);
+  }
+  
+  .app-button {
+    max-width: 160px;
+  }
+}

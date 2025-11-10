@@ -1,0 +1,377 @@
+/* dialog.css */
+
+.dashboard-contact-dialog_button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-contact-dialog_button.button{
+    background-color: var(--clr-button);
+    border-radius: 0;
+    width: 90%;
+    margin-inline: auto;
+    padding: 0.7rem;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    color: var(--color-white);
+    border-radius: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1rem;
+
+
+}
+.dashboard-contact-dialog_overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+.dashboard-contact-form{
+    margin-top: 1.5rem;
+}
+.dashboard-contact-dialog_content {
+  background: white;
+  color: #111827;
+  border-radius: 20px;
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideFromCenter 0.4s ease-out;
+}
+
+.dashboard-contact-dialog_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dashboard-contact-dialog_description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.dashboard-contact-dialog_actions {
+  text-align: right;
+}
+
+.dashboard-contact-dialog_close {
+  padding: 8px 16px;
+  background-color: #374151;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Animation only */
+@keyframes slideFromCenter {
+  from {
+    bottom: -50%; /* Start in the vertical center */
+    transform: translate(-50%, 50%); /* Adjust for exact centering */
+    opacity: 0;
+  }
+  to {
+    bottom: 20px; /* End at the bottom */
+    transform: translate(-50%, 0); /* Normal position */
+    opacity: 1;
+  }
+}
+
+.dashboard-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  width: 100%;
+  position: relative;
+}
+
+.dashboard-contact-close-button {
+  position: absolute;
+  right: 0rem;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(156, 163, 175);
+  background-color: white;
+  padding: 0.6rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-contact-close-button:hover {
+  background-color: var(--clr-button);
+  color: white;
+  border-color: var(--clr-button)
+}
+
+.dashboard-contact-close-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.dashboard-contact-title {
+  font-size: 0.875rem;
+  display: block;
+  font-weight: 700;
+  color: black;
+  white-space: pre-wrap;
+}
+
+
+.dashboard-contact-message {
+  font-size: 1rem;
+  text-align: center;
+  color: #6b7280;
+padding-inline: 1rem;
+  white-space: pre-wrap;
+  margin-top: 0.5rem;
+}
+
+/* Form Container */
+
+/* Field Styles */
+.dashboard-contact-field-relative {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-contact-field {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dashboard-contact-dropdown-button {
+  width: 100%;
+  height: 60px;
+  appearance: none;
+  border-radius: 0.5rem;
+  border: 1px solid #9ca3af;
+  background-color: white;
+  text-align: left;
+  position: relative;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.dashboard-contact-dropdown-button.has-value {
+  border-color: var(--clr-button)
+}
+
+.dashboard-contact-dropdown-label {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  left: 1rem;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #6b7280;
+  top: 0.5rem;
+}
+
+.dashboard-contact-dropdown-value {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  left: 1rem;
+  white-space: nowrap;
+  text-align: left;
+  width: 83.333333%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  color: var(--color-light-black);
+}
+
+.dashboard-contact-dropdown-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown List */
+.dashboard-contact-dropdown-list-container {
+  position: relative;
+}
+
+.dashboard-contact-dropdown-list {
+  max-height: 15rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  border-radius: 0.5rem;
+  border: 1px solid #9ca3af;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: white;
+  margin-top: 0.125rem;
+}
+
+.dashboard-contact-dropdown-item {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  height: 50px;
+  appearance: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dashboard-contact-dropdown-item:hover {
+  background-color: #f3f4f6;
+}
+
+.dashboard-contact-dropdown-item.selected {
+  background-color: #e5e7eb;
+}
+
+/* Subject Field */
+.dashboard-contact-subject-field {
+  margin-top: 0.5rem;
+}
+
+/* Textarea Field */
+.dashboard-contact-textarea-field {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.dashboard-contact-textarea-container {
+  position: relative;
+}
+
+.dashboard-contact-textarea {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #9ca3af;
+  padding: 1rem;
+  font-size: 1rem;
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.dashboard-contact-textarea:focus {
+  outline: none;
+  border-color: var(--clr-button)
+}
+
+.dashboard-contact-textarea-label {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  left: 1rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  top: 1.5rem;
+  color: #6b7280;
+}
+
+.dashboard-contact-textarea:focus + .dashboard-contact-textarea-label,
+.dashboard-contact-textarea:not(:placeholder-shown) + .dashboard-contact-textarea-label {
+  transform: translateY(-1.25rem);
+  font-size: 0.75rem;
+  color: var(--clr-button)
+}
+
+.dashboard-contact-char-count {
+  font-size: 0.75rem;
+  margin-left: auto;
+  color: #6b7280;
+  display: block;
+  text-align: right;
+}
+
+/* Form Buttons */
+.dashboard-contact-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.dashboard-contact-cancel-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  text-transform: uppercase;
+  border: 2px solid #374151;
+  background-color: white;
+  color: #374151;
+  cursor: pointer;
+}
+
+.dashboard-contact-submit-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  white-space: nowrap;
+  flex: 1;
+  text-transform: uppercase;
+  background-color: var(--clr-button);
+  color: white;
+  border: none;
+  cursor: pointer;
+    font-weight: 600;
+}
+
+
+.dashboard-contact-submit-button:hover {
+  background-color: var(--clr-button);
+}
+
+
+@media (max-width:39.5em) {
+  .dashboard-contact-dialog_content {
+ background: white;
+  color: #111827;
+  border-radius: 20px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideFromCenter 0.4s ease-out;
+  max-width: 100%;
+   
+  }
+  
+ 
+    
+}

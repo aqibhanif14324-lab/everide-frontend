@@ -1,0 +1,27 @@
+.btn-primary-profile {
+   padding-block: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem; /* text-14 (14px) */
+    border-radius: 1.2rem; /* rounded-[1.2rem] */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1; /* leading-none */
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: var(--clr-button); /* Replace with your desired primary color */
+    color: white;
+    margin-bottom: 2.5rem; /* mb-10 */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary-profile:hover {
+    background-color: var(--clr-button); /* Slightly darker on hover */
+  }
+  

@@ -1,0 +1,114 @@
+@import "./index.css";
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  margin-bottom: var(--space-1);
+}
+
+.menu-item:hover {
+  background-color: var(--color-grey-50);
+}
+
+  .menu-title.active , .menu-arrow.active{
+ color: var(--clr-button) !important;
+}
+
+.special-bg {
+  background-color: rgba(76, 175, 80, 0.05);
+  border: 1px dashed var(--color-primary-light);
+}
+
+.menu-item-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--color-light-black);
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  font-weight: 500;
+  color: var(--color-light-black);
+  font-size: var(--fs-600);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.menu-description {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey-500);
+}
+
+.menu-item-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-arrow {
+  color: var(--color-light-black);
+  font-size: 1.2rem;
+  transition: transform var(--transition-fast);
+}
+
+.menu-item:hover .menu-arrow {
+  transform: translateX(2px);
+  color: var(--color-grey-600);
+}
+
+.balance-indicator {
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-700);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  margin-right: var(--space-2);
+  font-weight: 500;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  width: 36px;
+  height: 20px;
+  background-color: var(--color-grey-200);
+  border-radius: var(--radius-full);
+  position: relative;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.toggle-switch.toggled {
+  background-color: var(--color-primary);
+}
+
+.toggle-slider {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform var(--transition-fast);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch.toggled .toggle-slider {
+  transform: translateX(16px);
+}

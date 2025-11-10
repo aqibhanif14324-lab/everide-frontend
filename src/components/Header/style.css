@@ -1,0 +1,10 @@
+.top_header_container{
+    background-color: var(--clr-accent);
+}
+.super_header_container {
+    position: sticky;
+    top: 0;
+    z-index: 99; 
+    background-color: white; 
+  }
+  

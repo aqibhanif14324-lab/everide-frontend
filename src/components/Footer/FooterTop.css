@@ -1,0 +1,36 @@
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: var(--footer-spacing-lg);
+}
+
+.footer-logo {
+  margin-bottom: var(--footer-spacing-md);
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4ECCA3;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 2rem;
+  }
+  
+  .footer-tagline {
+    font-size: 1rem;
+  }
+}

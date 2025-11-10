@@ -1,0 +1,246 @@
+/* Base Styles */
+.send-mode__container {
+  height: 100%;
+  overflow-y: scroll;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.send-mode__form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Styles */
+.send-mode__section,
+.send-mode__section--transporters {
+  padding: 0 0.7rem;
+
+}
+
+.send-mode__section-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+/* Package Selector Styles */
+.send-mode__package-selector {
+  width: 100%;
+  position: relative;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.send-mode__swiper-container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.send-mode__swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+  padding-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+.send-mode__package-option {
+  cursor: pointer;
+  flex: 0 0 auto;
+  width: auto;
+  padding-right: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.send-mode__radio-input,
+.send-mode__checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.send-mode__package-label {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--clr-border);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* width: 10.5rem;
+  height: 10.5rem; */
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+}
+
+.send-mode__package-label--recommended {
+  border: 4px solid var(--clr-button);
+}
+
+.send-mode__package-badge {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.send-mode__package-badge span {
+  background-color: var(--clr-button);
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-mode__package-size {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.send-mode__package-details {
+  font-size: 0.8125rem;
+  color: #666;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 1.5rem;
+}
+
+.send-mode__package-hint {
+  font-size: 0.8125rem;
+  color: #666;
+  padding: 0 1.5rem;
+}
+
+/* Divider Styles */
+.send-mode__divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-border);
+  margin: 1rem 0;
+}
+
+/* Transporter Options Styles */
+.send-mode__transporter-options {
+  margin-top: 1rem;
+}
+
+.send-mode__transporter-label {
+  display: block;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.send-mode__transporter-card {
+ display: flex
+;
+    border: 1px solid var(--clr-border);
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    background-color: var(--clr-background);
+    position: relative;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.send-mode__transporter-image {
+  width: 5rem;
+  padding: 1.5rem 0;
+}
+
+.send-mode__transporter-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.send-mode__transporter-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0 0.4rem 0.4rem;
+  flex-grow: 1;
+}
+
+.send-mode__transporter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.send-mode__transporter-name {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+
+.send-mode__transporter-description {
+  font-size: 0.8125rem;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+.send-mode__transporter-checkmark {
+  border: 2px solid var(--clr-button);
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  width: 2rem;
+  height: 1.6rem;
+  background-color: var(--clr-button);
+}
+
+.send-mode__transporter-checkmark svg {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Footer Styles */
+.send-mode__footer {
+  padding: 1.5rem;
+  background-color: white;
+  border-top: 1px solid var(--clr-border);
+  position: sticky;
+  bottom: 0;
+}
+
+.send-mode__submit-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--clr-button);
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-mode__submit-button:hover {
+  background-color: #0052a3;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .send-mode__transporter-name,
+  .send-mode__transporter-description {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+/* Colors Page Specific Styles */
+.color-option-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black !important;
+}
+
+.color-option-left {
+  display: flex;
+  align-items: center;
+}
+
+.color-swatch-filter {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.color-label-filter {
+  font-size: 14px;
+}
+
+.color-count-filter {
+  color: black;
+  font-size: 12px;
+}

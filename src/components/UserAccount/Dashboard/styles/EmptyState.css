@@ -1,0 +1,57 @@
+@import "./index.css";
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.empty-state-icon {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-4);
+  background-color: var(--color-grey-100);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.empty-state-title {
+  font-size: var(--font-size-lgg);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--clr-black);
+  font-family: "Montserrat", sans-serif;
+}
+
+.empty-state-description {
+  color: var(--color-grey-600);
+  max-width: 400px;
+  margin-bottom: var(--space-6);
+}
+
+.down-arrow {
+  font-size: var(--font-size-2xl);
+  color: var(--clr-black);
+  margin-bottom: var(--space-6);
+  animation: bounce 1.5s infinite;
+}
+
+.page-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-light-black);
+  font-weight: 400;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

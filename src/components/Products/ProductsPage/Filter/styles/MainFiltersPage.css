@@ -1,0 +1,101 @@
+/* Main Filters Page Styles */
+.main-filters {
+  padding: 0;
+  
+}
+.price-border{
+  border-bottom: none !important;
+}
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: black !important;
+  
+}
+.filter-row:last-child{
+  border: none !important;
+
+}
+
+.filter-row:hover {
+  background-color: #f9f9f9;
+}
+.filter-row{
+  margin-inline: 1rem;
+}
+
+.filter-row:first-child{
+  background-color: #F9FAFB;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.6rem;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-row:last-child{
+  border-bottom: none !important;
+
+}
+.filter-row:first-child .filter-label{
+display: flex;
+flex-direction: row !important;
+align-items: center;
+justify-content: space-between !important;
+width: 100%;
+padding-right: 1rem;
+}
+.filter-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--fs-600);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-light-black);
+}
+
+.filter-value {
+  color: #00c07f !important;
+  font-size: 14px;
+}
+
+.filter-selection {
+  color: #777;
+  font-size: 14px;
+}
+
+.chevron {
+  font-size: 2rem;
+  color: var(--color-light-black);
+}
+
+.filter-section-title {
+  margin-top: 2rem;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(113, 113, 113)  ;
+
+}
+
+.filter-option-left{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  color: var(--clr-gray);
+  width: 90%;
+}
+.state-tagline{
+  font-size: 14px;
+  color: var(--clr-grey);
+  font-weight: 400;
+  margin-top: 0.5rem;
+  padding-right: 1rem;
+}
