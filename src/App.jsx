@@ -10,26 +10,46 @@ import Ambassadors from "./components/Ambassadors/Ambassadors";
 import Login from "./Authenticaiton/Login/Login";
 import SellProducts from "./components/UserAccount/SellProducts/SellProduct";
 import SearchProducts from "./components/SearchProducts/SearchProducts";
-// Store provider moved to main.jsx
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
-
-
   return (
     <Router>
       <Routes>
+        {/* Public routes */}
         <Route path="/" element={<HomePage />} />
-       
         <Route path="/category/:category" element={<Productpage />} />
         <Route path="/product/:id" element={<SingleProduct />} />
-        <Route path="/user/dashboard/:id" element={<UserDashboard />} />
-          <Route path="/user/messenger/:id" element={<MessageAreaToggle />} />
         <Route path="/shop/:shopname" element={<SingleStore />} />
-                <Route path="/page/ambassadors" element={<Ambassadors />} />
-                <Route path="/login" element={<Login />} />
-        <Route path="/sell/:id" element={<SellProducts />} />
+        <Route path="/page/ambassadors" element={<Ambassadors />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/search" element={<SearchProducts />} />
 
+        {/* Protected routes - Dashboard and user areas */}
+        <Route 
+          path="/user/dashboard/:id" 
+          element={
+            <ProtectedRoute>
+              <UserDashboard />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/user/messenger/:id" 
+          element={
+            <ProtectedRoute>
+              <MessageAreaToggle />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/sell/:id" 
+          element={
+            <ProtectedRoute>
+              <SellProducts />
+            </ProtectedRoute>
+          } 
+        />
       </Routes>
     </Router>
   )
